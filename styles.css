@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    background: url(background.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 60px 0 15px;
+}
+
+.left .logo{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    justify-content: center;
+    height: 120px;
+}
+
+.logo img {
+  max-width: 400px;  /* adjust this for size */
+  width: 150px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.photo-credit, a{
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+
+.right{
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom, .top{
+    background: #eee;
+}
+
+.top{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 150px 60px 50px;
+}
+
+.top h1{
+    margin-bottom: 30px;
+}
+
+.top p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bottom{
+    flex: 1;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.mid{
+    background: #fff;
+    border: 1px solid #eee;
+    flex: 1.15;
+    padding: 20px 300px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+}
+
+.signup-form{
+    padding: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+    justify-content: center;
+}
+
+.signup-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    gap: 60px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: darkblue;
+}
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #6b8e23; /* Olive green like the example */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #556b2f;
+}
+
+.login-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.login-text a {
+    color: #2f4f4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
